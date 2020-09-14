@@ -36,48 +36,49 @@ This is ApacheBench, Version 2.3 <$Revision: 1807734 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking 3.237.9.86 (be patient)
-Completed 5000 requests
-Completed 10000 requests
-Completed 15000 requests
-Finished 15404 requests
+  Benchmarking 3.237.9.86 (be patient)
+  Completed 5000 requests
+  Completed 10000 requests
+  Completed 15000 requests
+  Finished 15404 requests
 
 
-Server Software:        gunicorn/19.9.0
-Server Hostname:        3.237.9.86
-Server Port:            30001
+  Server Software:        gunicorn/19.9.0
+  Server Hostname:        3.237.9.86  
+  Server Port:            30001
 
-Document Path:          /
-Document Length:        Variable
+  Document Path:          /
+  Document Length:        Variable
 
-Concurrency Level:      100
-Time taken for tests:   10.001 seconds
-Complete requests:      15404
-Failed requests:        0
-Total transferred:      2691064 bytes
-HTML transferred:       225784 bytes
-Requests per second:    1540.24 [#/sec] (mean)
-Time per request:       64.925 [ms] (mean)
-Time per request:       0.649 [ms] (mean, across all concurrent requests)
-Transfer rate:          262.77 [Kbytes/sec] received
+  Concurrency Level:      100
+  Time taken for tests:   10.001 seconds
+  Complete requests:      15404
+  Failed requests:        0
+  Total transferred:      2691064 bytes
+  HTML transferred:       225784 bytes
+  Requests per second:    1540.24 [#/sec] (mean)
+  Time per request:       64.925 [ms] (mean)  
+  Time per request:       0.649 [ms] (mean, across all concurrent requests)
+  Transfer rate:          262.77 [Kbytes/sec] received
 
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:        1    2  14.2      1    1022
-Processing:     2   63  56.0     51     173
-Waiting:        2   63  55.9     51     173
-Total:          3   65  57.9     54    1156
+  Connection Times (ms)
+               min  mean[+/-sd] median   max  
+  Connect:        1    2  14.2      1    1022
+  Processing:     2   63  56.0     51     173
+  Waiting:        2   63  55.9     51     173
+  Total:          3   65  57.9     54    1156
 
-Percentage of the requests served within a certain time (ms)
-  50%     54
-  66%    113
-  75%    122
-  80%    126
-  90%    136
-  95%    143
-  98%    149
-  99%    152
- 100%   1156 (longest request)
+
+  Percentage of the requests served within a certain time (ms)
+    50%     54
+    66%    113
+    75%    122
+    80%    126
+    90%    136
+    95%    143
+    98%    149
+    99%    152
+    100%   1156 (longest request)
 
 
 Note: Here i installed apache2 to check apache benchmark test.
