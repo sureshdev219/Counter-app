@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: flask-app
+        tier: frontend
+    spec:
+      containers:
+      - name: flask-app
+        image: tarunbhardwaj/flask-counter-app:latest
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        env:
+        - name: REDIS_URL
+          value: redis://redis.default.svc.cluster.local:6379
+        ports:
+        - containerPort: 5000
