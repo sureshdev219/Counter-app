@@ -10,26 +10,26 @@ t2.large 2 vCPU 8 GB memory)
   
   3. Deployed redis with 2 replica by running below two commands.
   Created 2 files --> redis-deployments.yml, redis-services.yml
-      kubectl create -f redis-deployment.yml
-      kubectl create -f redis-service.yml
+        kubectl create -f redis-deployment.yml
+        kubectl create -f redis-service.yml
   
   4. Deployed flask-counter-app with 2 replicas by running below two commands.
   Created 2 files --> deployment.yml, service.yml 
-      kubectl create -f deployment.yml
-      kubectl create -f service.yml
+        kubectl create -f deployment.yml
+        kubectl create -f service.yml
   Note: Here i am using NodePort as a service
   
   5. To check the pods status
-      kubectl get pods
+        kubectl get pods
     
   6. To check the services status
-      kubectl get svc
+        kubectl get svc
     
   7. Test the application by using ipaddress along with port number or open it in web browser
-      curl 3.237.9.86:30001/  or 3.237.9.86:30001/
+        curl 3.237.9.86:30001/  or 3.237.9.86:30001/
   
-  8. Also tested the deployment via apache benchmark (ab)
-      ab -l -c 100 -t 10 3.237.9.86:30001/
+  8. Also tested the deployment via apache benchmark (ab):
+        ab -l -c 100 -t 10 3.237.9.86:30001/
   
   Here the output look like this below
   
