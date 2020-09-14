@@ -3,7 +3,8 @@
 Deploy flask-counter-app on Kubernetes
 
 Steps Followed:
-  1. Here I used aws ec2 instances to deploy application into Kubernetes Cluster.
+  1. Here I used 2 aws ec2 instances to deploy application into Kubernetes Cluster( General purpose
+t2.large 2 vCPU 8 GB memory)
   
   2. Cloned docker image from https://hub.docker.com/r/tarunbhardwaj/flask-counter-app
   
